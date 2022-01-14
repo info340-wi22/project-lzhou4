@@ -1,0 +1,24 @@
+h1 {
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    color: lightskyblue;
+}
+
+h2 {
+    font-size: 18px;
+    background-color: rgb(247, 225, 203);
+    color: lightslategrey;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    font-size: 14px;
+    background-color: rgba(243, 231, 231, 0.809); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+

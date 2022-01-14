@@ -10,6 +10,8 @@ h2 {
     background-color: rgb(247, 225, 203);
     color: lightslategrey;
     font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 body {

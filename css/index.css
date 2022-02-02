@@ -28,9 +28,65 @@
     text-decoration: underline;
 }
 
+/*Nav bar*/
+#navigationLinks {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+    color: gray;
+    font-size: 1.75rem;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.nav-link {
+    color: black;
+}
+
+/*HTML Home Page*/
+main {
+    padding: 2.5rem;
+}
+
+#food-genre {
+    font-size: 2rem;
+    font-weight: 300;
+}
+.card {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 500px;
+    height: 300px;
+}
+
+.card-row {
+    padding-top: .5rem;
+}
+
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 0%;
+}
+.card-img {
+    display: flex;
+    width: 400;
+    height: 200;
+}
+
+.card-img:hover {
+    opacity: 50%;
+}
+
+/*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {
     .restaurant-summary h1 {
         font-size: 1.5rem;
     }
-    
 }

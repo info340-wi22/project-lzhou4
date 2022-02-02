@@ -90,10 +90,12 @@ main {
 }
 .card-img {
     display: flex;
-    width: auto;
-    height: auto;
+    width: 400;
+    height: 200;
 }
 
 .card-img:hover {
     opacity: 50%;
 }
+
+/*media query for main page and javascrpt/link to the next page

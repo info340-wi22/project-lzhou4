@@ -2,42 +2,35 @@
     box-sizing: border-box;
 }
 
-.restaurant-rank {
-    display: flex;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-img {
-    display: flex;
-    width: 600px;
-    height: 450px;
-}
-
-main {
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-.restaurant-summary {
-    padding-left: 3rem;
-}
-
 .restaurant-summary h1 {
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.restaurant-summary h2 {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 
 .restaurant-summary p {
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .restaurant-summary a {
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #a8a6a1;
     text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+    .restaurant-summary h1 {
+        font-size: 1.5rem;
+    }
+    
 }

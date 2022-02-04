@@ -38,6 +38,7 @@
     padding-left: 1rem;
     color: gray;
     font-size: 1.75rem;
+    text-decoration: none;
 }
 
 .nav-item {
@@ -104,6 +105,18 @@ main {
     padding-bottom: 1rem!important;
 }
 
+.form-header {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 0%;
+    font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {

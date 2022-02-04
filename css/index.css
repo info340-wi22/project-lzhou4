@@ -64,6 +64,7 @@
 .navbar-toggler {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 /*HTML Home Page*/
@@ -148,7 +149,7 @@ a {
     .card-title {
         font-size: 1.5rem;   
     }
-    
+
     .card-img {
         width: 350px; 
         height: 250px; 

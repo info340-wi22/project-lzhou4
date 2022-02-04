@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Second page */
 .restaurant-summary h1 {
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
@@ -103,9 +104,6 @@ main {
     padding-bottom: 1rem!important;
 }
 
-li.footitem:hover {
-    color: pink;
-}
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {
@@ -118,8 +116,5 @@ li.footitem:hover {
 
     .restaurant-summary h1 {
         font-size: 1.5rem;
-    }
-    card-title {
-        font-size: 1.5rem;   
     }
 }

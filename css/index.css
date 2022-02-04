@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-/* Second page */
+/* Second HTML page */
 .restaurant-summary h1 {
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
@@ -29,6 +29,11 @@
     text-decoration: underline;
 }
 
+.food-pic {
+    width: 500px;
+    height: auto;
+}
+
 /*Nav bar*/
 #navigationLinks {
     margin-left: auto;
@@ -36,16 +41,21 @@
 
 .navbar-brand {
     padding-left: 1rem;
-    color: gray;
+    color: #a8a6a1;
     font-size: 1.75rem;
+    text-decoration: none;
 }
 
 .nav-item {
     padding: 1rem;
 }
+ 
+.nav-link:hover {
+    color: grey;
+}
 
 .nav-link {
-    color: black;
+    color: #a8a6a1;
 }
 
 .nav-icon {
@@ -85,6 +95,7 @@ main {
     font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: black;
 }
+
 .card-img {
     display: flex;
     width: 400;
@@ -94,8 +105,6 @@ main {
 .card-img:hover {
     opacity: 50%;
 }
-
-a:link { text-decoration: none; }
 
 .py-3 {
     padding-top: 1rem!important;
@@ -107,6 +116,18 @@ a:link { text-decoration: none; }
     padding-bottom: 1rem!important;
 }
 
+.form-header {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 0%;
+    font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {
@@ -126,8 +147,8 @@ a:link { text-decoration: none; }
         font-size: 1.5rem;   
     }
     .card-img {
-        width: 350px; /*set the width or max-width*/
-        height: 250px; /*this makes sure to maintain the aspect ratio*/
+        width: 350px; 
+        height: 250px; 
     }
 }
 

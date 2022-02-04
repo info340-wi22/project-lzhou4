@@ -15,7 +15,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <nav class="navbar ">
+                <img class="nav-icon" src="img/yummy_icon-removebg-preview.png" alt="navigation bar brand" width="50" height="50">
+            </nav>
               <a class="navbar-brand" href="#">Moody Foodies</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,8 +31,9 @@
                     <a class="nav-link" href="#">SHARE</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">SIGN IN</a>
+                    <a class="nav-link" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true" aria-controls="collapseForm" href="#collapseForm">SIGN IN</a>
                   </li>
+                  </div>
                 </ul>
               </div>
             </div>
@@ -71,12 +74,14 @@
 
                 <!-- Card 3 -->
                 <div class="col-md-6 col-xl-4 d-flex">
+                    <a href="index1.html">
                     <div class="card mb-4">
                         <img src="img/korean.jpg" class="card-img" alt="Picture of Korean Food" width="500px" height="300px">
                         <div class="card-body mr-2">
                             <h1 class="card-title">Korean</h1>
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <!-- Card 4 -->
@@ -145,13 +150,13 @@
         <div>
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item">
-                    <p>App</p>
+                    <a class= "nav-link" href="#">App</a>
                </li>
                <li class="nav-item">
-                   <p>Sign In</p>
+                    <a class= "nav-link" href="#">Sign In</a>
               </li>
               <li class="nav-item">
-                   <p>Share</p>
+                    <a class= "nav-link" href="#">Share</a>
                </li>
             </ul>
             <p class="text-center">&copy; 2022 Moody Foodies</p>

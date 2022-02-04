@@ -43,6 +43,7 @@
     padding-left: 1rem;
     color: gray;
     font-size: 1.75rem;
+    text-decoration: none;
 }
 
 .nav-item {
@@ -109,6 +110,15 @@ main {
 .my-4 {
     padding-top: 1rem!important;
     padding-bottom: 1rem!important;
+}
+
+.form-header {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 0%;
+    font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: black;
 }
 
 a {

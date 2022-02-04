@@ -35,7 +35,7 @@
 }
 
 .navbar-brand {
-    padding-left: 2rem;
+    padding-left: 1rem;
     color: gray;
     font-size: 1.75rem;
 }
@@ -47,6 +47,14 @@
 .nav-link {
     color: black;
 }
+
+.nav-icon {
+    margin-left: 1rem;
+}
+.navbar-toggler {
+    padding-left: 1rem;
+}
+
 
 /*HTML Home Page*/
 main {
@@ -83,10 +91,12 @@ main {
     height: 200;
 }
 
-
 .card-img:hover {
     opacity: 50%;
 }
+
+a:link { text-decoration: none; }
+
 .py-3 {
     padding-top: 1rem!important;
     padding-bottom: 1rem!important;
@@ -97,22 +107,30 @@ main {
     padding-bottom: 1rem!important;
 }
 
-card-title {
-    font-size: 1.5rem;   
-}
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {
+    .navbar-brand {
+        padding-left: 2rem;
+        color: gray;
+        font-size: 1.75rem;
+    }
+    .nav-icon {
+        margin-left: 1rem;
+    }
     .restaurant-summary h1 {
         font-size: 1.5rem;
     }
 
-    card-title {
+    .card-title {
         font-size: 1.5rem;   
+    }
+    .card-img {
+        width: 350px; /*set the width or max-width*/
+        height: 250px; /*this makes sure to maintain the aspect ratio*/
     }
 }
 
-.photo img {
-    width: 300px; /*set the width or max-width*/
-    height: auto; /*this makes sure to maintain the aspect ratio*/
-}
+
+
+

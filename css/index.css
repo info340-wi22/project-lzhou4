@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-/* Second page */
+/* Second HTML page */
 .restaurant-summary h1 {
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
@@ -27,6 +27,11 @@
     font-size: 1rem;
     color: #a8a6a1;
     text-decoration: underline;
+}
+
+.food-pic {
+    width: 500px;
+    height: auto;
 }
 
 /*Nav bar*/
@@ -85,6 +90,7 @@ main {
     font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: black;
 }
+
 .card-img {
     display: flex;
     width: 400;
@@ -94,6 +100,7 @@ main {
 .card-img:hover {
     opacity: 50%;
 }
+
 .py-3 {
     padding-top: 1rem!important;
     padding-bottom: 1rem!important;
@@ -104,6 +111,9 @@ main {
     padding-bottom: 1rem!important;
 }
 
+a {
+    text-decoration: none;
+}
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {

@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Second page */
 .restaurant-summary h1 {
     font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
@@ -54,25 +55,27 @@ main {
 
 #food-genre {
     font-size: 2rem;
-    font-weight: 300;
-}
-.card {
-    display: flex;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 500px;
-    height: 300px;
+    font-weight: 400;
+    color: black;
 }
 
 .card-row {
     padding-top: .5rem;
 }
 
-.card-title{
+.card {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-title {
     font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
     padding-bottom: 0%;
+    font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: black;
 }
 .card-img {
     display: flex;
@@ -80,8 +83,22 @@ main {
     height: 200;
 }
 
+
 .card-img:hover {
     opacity: 50%;
+}
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+
+.my-4 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+
+card-title {
+    font-size: 1.5rem;   
 }
 
 /*media query for main page and javascrpt/link to the next page*/
@@ -90,3 +107,5 @@ main {
         font-size: 1.5rem;
     }
 }
+
+

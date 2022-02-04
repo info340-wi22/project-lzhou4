@@ -41,7 +41,7 @@
 
 .navbar-brand {
     padding-left: 1rem;
-    color: gray;
+    color: #a8a6a1;
     font-size: 1.75rem;
     text-decoration: none;
 }
@@ -49,13 +49,17 @@
 .nav-item {
     padding: 1rem;
 }
+ 
+.nav-link:hover {
+    color: grey;
+}
 
 .nav-link {
-    color: black;
+    color: #a8a6a1;
 }
 
 .nav-icon {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .navbar-toggler {
     padding-left: 0.5rem;
@@ -127,14 +131,27 @@ a {
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {
-
     .navbar-brand {
         padding-left: 2rem;
         color: gray;
         font-size: 1.75rem;
     }
-
+    .nav-icon {
+        margin-left: 1rem;
+    }
     .restaurant-summary h1 {
         font-size: 1.5rem;
     }
+
+    .card-title {
+        font-size: 1.5rem;   
+    }
+    .card-img {
+        width: 350px; 
+        height: 250px; 
+    }
 }
+
+
+
+

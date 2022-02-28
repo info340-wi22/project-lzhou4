@@ -35,7 +35,7 @@
 }
 
 /*Nav bar*/
-#navigationLinks {
+.navbar-nav {
     margin-left: auto;
 }
 
@@ -62,18 +62,17 @@
     margin-left: 1rem;
 }
 .navbar-toggler {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-right: 1rem;
 }
-
 
 /*HTML Home Page*/
 main {
     padding: 2.5rem;
 }
 
-#food-genre {
+.food-genre {
     font-size: 2rem;
     font-weight: 400;
     color: black;
@@ -138,9 +137,11 @@ a {
         color: gray;
         font-size: 1.75rem;
     }
+
     .nav-icon {
         margin-left: 1rem;
     }
+
     .restaurant-summary h1 {
         font-size: 1.5rem;
     }
@@ -148,6 +149,7 @@ a {
     .card-title {
         font-size: 1.5rem;   
     }
+
     .card-img {
         width: 350px; 
         height: 250px; 

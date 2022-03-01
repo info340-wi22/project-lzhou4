@@ -8,10 +8,10 @@ export function Footer() {
                     <a className="nav-link" href="#">App</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Sign In</a>
+                    <a className="nav-link" href="#">Share</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Share</a>
+                    <a className="nav-link" href="#">My Page</a>
                 </li>
             </ul>
             <p className="text-center">&copy; 2022 Moody Foodies</p>

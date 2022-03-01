@@ -1,16 +1,33 @@
-//import { NavBar } from './Navigation';
+import React from "react";
+import NavBar from "./components/Navbar/Navbar";
+import React, { useState }from 'react';
+import FormCompontent from './form';
+// ----------
 import RestaurantRanks from "./RestaurantList";
-
+import { RestraurantList } from './RestrList';
 import RESTAURANT_LISTINGS from '..data/restaurant_listings.json';
-export default function App(props) {
-  return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-2">
-          <RestaurantRanks restaurants={RESTAURANT_LISTINGS}/>
-        </div>
-      </div>
-    </div>
-  );
-}
 
+function App() {
+
+  const addForm = (restraurantName, restraurantDescript, restraurantDirection) => {
+    const newRestr = {
+      inputRestrauant: restraurantName,
+      inputDescript: restraurantDescript,
+      inputDirection: restraurantDirection,
+    }
+    return newRestr;
+    // setInput(newRestr)
+  }
+
+// define function addForm pass as a prop to FormCompontent
+
+    return (
+      <div className="App">
+        <FormCompontent addForm={addForm}/>
+        <RestraurantList />
+        <RestaurantRanks restaurants={RESTAURANT_LISTINGS}/>
+      </div>
+    );
+  }
+
+  export default App;

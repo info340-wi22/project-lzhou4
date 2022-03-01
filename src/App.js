@@ -29,6 +29,7 @@ function App() {
       <Routes>
         {/* <Route path='/' element={ } /> */}
       </Routes>
+      <Footer />
     </div>
   );
 }

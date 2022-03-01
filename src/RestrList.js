@@ -40,7 +40,9 @@ export function RestraurantList(props) {
     })
 
     return (
-        restrListArray
+        <div class="container-fluid">
+            {restrListArray}
+        </div>
     )
 }
 

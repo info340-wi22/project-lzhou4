@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function AboutNav() {
     return (
@@ -8,14 +9,14 @@ export function AboutNav() {
                     <img className="nav-icon" src="img/yummy_icon-removebg-preview.png" alt="navigation bar brand" width="50"
                         height="50" />
                 </nav>
-                <a className="navbar-brand" href="#">Moody Foodies</a>
+                <Link className="navbar-brand" to="/">Moody Foodies</Link>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav" id="navigationLinks">
-                        <li><a className="nav-link" href="#">APP</a></li>
-                        <li><a className="nav-link" href="#">SHARE</a></li>
-                        <li><a className="nav-link" href="#">MY PAGE</a></li>
-                        <li><a className="nav-link" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true" 
-                        aria-controls="collapseForm" href="#collapseForm">SIGN IN</a></li>
+                        <li><Link className="nav-link" to="/app">APP</Link></li>
+                        <li><Link className="nav-link" to="/share">SHARE</Link></li>
+                        <li><Link className="nav-link" to="/MyPage">MY PAGE</Link></li>
+                        <li><Link className="nav-link" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true" 
+                        aria-controls="collapseForm" to="#collapseForm">SIGN IN</Link></li>
                     </ul>
                 </div>
             </nav >

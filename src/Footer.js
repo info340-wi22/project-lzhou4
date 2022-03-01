@@ -3,7 +3,7 @@ import React from "react";
 export function Footer() {
     return (
         <div>
-            <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+            <ul className="nav justify-content-center border-bottom pb-1.5 mb-3">
                 <li className="nav-item">
                     <a className="nav-link" href="#">App</a>
                 </li>

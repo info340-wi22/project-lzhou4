@@ -28,6 +28,7 @@ export default function FormCompontent(props) {
 
     return (
         <div>
+            <h1>Add Restaurant</h1>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="foodGenre">
                     <Form.Label>Food Genre</Form.Label>

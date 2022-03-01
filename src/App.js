@@ -29,16 +29,17 @@ function App(props) {
     <div className="App">
 
 
-      <AboutNav/>
+      <AboutNav />
 
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='Korean' element={
           <div>
             <RestraurantList key={props.restraurant} />
-            <FormCompontent addForm={addForm} />
+            
           </div>} />
-          <Route path='MyPage' element={<MyPage origin={props.restraurant} />}/>
+          <Route path='share' element={<FormCompontent addForm={addForm} />}/>
+        <Route path='MyPage' element={<MyPage origin={props.restraurant} />} />
       </Routes>
       <Footer />
     </div>

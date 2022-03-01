@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import FormCompontent from './form';
 import RESTAURANT_LISTINGS from './data/restaurant_listings.json';
 
 
@@ -26,7 +25,7 @@ function Restr(props) {
 
 // 1 props 
 // restraurant: the restraurant object
-export function RestraurantList(props) {
+export function RestraurantList() {
     // const SAMPLE_RESTRAURANTS = [
     //     { restrName: "Korean Tofu House", restrDescrp: "Korean Tofu House has the best side dishes!!! And the dishes all taste so good! It's my go-to place when I feel like eating Korean food.", restrDir: "https://www.google.com/maps/place/Korean+Tofu+House/@47.6582152,-122.3162557,17z/data=!3m1!4b1!4m5!3m4!1s0x549014f49fa80a91:0xadb81f75121380e8!8m2!3d47.6582152!4d-122.314067", restrImg: "https://images.unsplash.com/photo-1580651315530-69c8e0026377?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80" },
     //     { restrName: "The BoB", restrDescrp: "The BoB have very good side dishes as well, but the wait time there is a bit longer. I LOVE their spicy pork bone soup and bibimbap!", restrDir: "https://www.google.com/maps/place/the+BoB/@47.6577819,-122.3157048,17z/data=!3m1!4b1!4m5!3m4!1s0x549014f35c33f1ef:0xe66019b273c48ceb!8m2!3d47.6577802!4d-122.3133803", restrImg: "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2019/02/korean-dumpling-hot-pot-2.jpg?fit=1300%2C732&ssl=1" },
@@ -39,7 +38,7 @@ export function RestraurantList(props) {
     })
 
     return (
-        <div class="container-fluid">
+        <div className="container-fluid">
             {restrListArray}
         </div>
     )

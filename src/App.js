@@ -1,21 +1,13 @@
-<<<<<<< HEAD
-import React from "react";
-import NavBar from "./components/Navbar/Navbar";
-
-export default function App() {
-  return (
-    <div className="App">
-      <NavBar />
-    </div>
-  );
-}
-
-=======
 import React, { useState }from 'react';
 import FormCompontent from './form';
+import { AboutNav } from './NavBar';
+import { foodCard, foodCuisine, foodHeader } from './foodGenre';
 import { RestraurantList } from './RestrList';
 
+
 function App() {
+
+
 
   const addForm = (restraurantName, restraurantDescript, restraurantDirection) => {
     const newRestr = {
@@ -31,6 +23,7 @@ function App() {
 
     return (
       <div className="App">
+        <AboutNav />
         <FormCompontent addForm={addForm}/>
         <RestraurantList />
       </div>
@@ -38,4 +31,3 @@ function App() {
   }
 
   export default App;
->>>>>>> 2cd9236e30560146c8891515a821c23eccc7377a

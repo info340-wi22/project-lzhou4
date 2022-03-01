@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 8ee674238b7f7771031b550a064891d70423c8dc
 import React, { useState }from 'react';
 import FormCompontent from './form';
 import { AboutNav } from './NavBar';
@@ -28,20 +24,9 @@ function App() {
 
   // define function addForm pass as a prop to FormCompontent
 
-<<<<<<< HEAD
-    return (
-      <div className="App">
-        <AboutNav />
-        <FormCompontent addForm={addForm}/>
-        <RestraurantList />
-      </div>
-    );
-  }
-
-  export default App;
-=======
   return (
     <div className="App">
+      <AboutNav />
       <FormCompontent addForm={addForm} />
       <RestraurantList />
       
@@ -54,4 +39,3 @@ function App() {
 }
 
 export default App;
->>>>>>> 8ee674238b7f7771031b550a064891d70423c8dc

@@ -1,10 +1,13 @@
+import React from "react";
+
+
 export default function RestarauntList(props) {
     const restaurantArray = props.restaurants;
     console.log(restaurantArray);
 
     // array of <Restaurant> Components
     const componentArray = restaurantArray.map((aRestaurant) => {
-        const restaurantElement = <Restaurant restaurantName={aRestaurantObject}
+        const restaurantElement = <Restaurant restaurantName={aRestaurantObject}></Restaurant>
         return restaurantElement
     });
     
@@ -31,7 +34,8 @@ export default function RestarauntList(props) {
             <div>
                 <p>{restaurauntName}</p>
                 <p>{}</p>
-            </div>  
+            </div>
+  
         </div>
     )
 }

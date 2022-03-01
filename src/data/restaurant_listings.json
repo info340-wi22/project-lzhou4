@@ -1,8 +1,26 @@
 [           
-     {
-         "restaurantRank": "", 
-         "restaurantName": "", 
-         "restaurantText": "", 
-         "restaurantImg": ""
-    }
+    {
+         "restaurantRank": "Top 1", 
+         "restaurantName": "Korean Tofu House", 
+         "restaurantText": "Korean Tofu House has the best side dishes!!! And the dishes all taste so good! It's my go-to place when I feel like eating Korean food.", 
+         "restaurantImg": "https://images.unsplash.com/photo-1580651315530-69c8e0026377?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+    },
+    {
+         "restaurantRank": "Top 2", 
+         "restaurantName": "The BoB", 
+         "restaurantText": "The BoB have very good side dishes as well, but the wait time there is a bit longer. I LOVE their spicy pork bone soup and bibimbap!", 
+         "restaurantImg": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2019/02/korean-dumpling-hot-pot-2.jpg?fit=1300%2C732&ssl=1"
+    },
+    {
+         "restaurantRank": "Top 3", 
+         "restaurantName": "Chi Mac", 
+         "restaurantText": "The fried chicken at Chi Mac is THE BEST!!! I absolutely love the snow flavor, other flavors are good too! Their fried rice and cheese corn are also very delicious. Also love their radish that goes with the chicken!", 
+         "restaurantImg": "https://images.dailyhive.com/20200214121159/71598897_381612379458979_9001795591640206581_n-1.jpg"
+   },
+   {
+         "restaurantRank": "Top 4", 
+         "restaurantName": "Kong Tofu House", 
+         "restaurantText": "Kong Tofu House is very affordable and tastes okay, I want to try all of their menu.", 
+         "restaurantImg": "https://images.unsplash.com/photo-1558892349-f0812740196e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80"
+   }
  ]

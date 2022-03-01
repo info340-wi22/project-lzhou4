@@ -1,6 +1,5 @@
 import React from "react";
-import NavBar from "./components/Navbar/Navbar";
-import React, { useState }from 'react';
+// import React, { useState } from 'react';
 import FormCompontent from './form';
 // ----------
 import RestaurantRanks from "./RestaurantList";

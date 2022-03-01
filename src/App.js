@@ -1,12 +1,19 @@
-
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import FormCompontent from './form';
+import { AboutNav } from './NavBar';
 import { RestraurantList } from './RestrList';
 import { Route, Routes } from 'react-router-dom';
-import {MyPage} from './MyPage';
-
+import { MyPage } from './MyPage';
+import { propTypes } from 'react-bootstrap/esm/Image';
+import { Footer } from './Footer.js';
+import { HomePage } from './HomePage';
 function App(props) {
   // define function addForm pass as a prop to FormCompontent
+
+
+
+
+
   const addForm = (restraurantName, restraurantDescript, restraurantDirection) => {
     const newRestr = {
       inputRestrauant: restraurantName,
@@ -20,14 +27,20 @@ function App(props) {
 
   return (
     <div className="App">
-      <FormCompontent addForm={addForm} />
-      <MyPage origin={props.restraurant}/>
-      {/* <RestraurantList key={props.restraurant} /> */}
-      
-      {/* <RestaurantRanks restaurants={RESTAURANT_LISTINGS}/> */}
+
+
+      <AboutNav/>
+
       <Routes>
-        <Route path='Korean' element={<RestraurantList key={props.restraurant} />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='Korean' element={
+          <div>
+            <RestraurantList key={props.restraurant} />
+            <FormCompontent addForm={addForm} />
+          </div>} />
+          <Route path='MyPage' element={<MyPage origin={props.restraurant} />}/>
       </Routes>
+      <Footer />
     </div>
   );
 }

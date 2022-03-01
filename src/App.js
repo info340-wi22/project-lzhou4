@@ -1,7 +1,6 @@
 import React, { useState }from 'react';
 import FormCompontent from './form';
 import { AboutNav } from './NavBar';
-import { foodCard, foodCuisine, foodHeader } from './foodGenre';
 import { RestraurantList } from './RestrList';
 import { Route, Routes } from 'react-router-dom';
 import { propTypes } from 'react-bootstrap/esm/Image';
@@ -24,18 +23,17 @@ function App() {
 
   // define function addForm pass as a prop to FormCompontent
 
-  return (
-    <div className="App">
-      <AboutNav />
-      <FormCompontent addForm={addForm} />
-      <RestraurantList />
-      
-      {/* <RestaurantRanks restaurants={RESTAURANT_LISTINGS}/> */}
-      <Routes>
+    return (
+      <div className="App">
+        <AboutNav />
+        <FormCompontent addForm={addForm}/>
+        <RestraurantList />
+        <Routes>
         {/* <Route path='/' element={ } /> */}
-      </Routes>
-    </div>
-  );
-}
+        </Routes>
+        <Footer />
+      </div>
+    );
+  }
 
-export default App;
+  export default App;

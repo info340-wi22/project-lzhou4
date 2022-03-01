@@ -1,0 +1,11 @@
+[
+    {"country":"Mexican","name":"meixican","img":"public/img/mexian.jpg"},
+    {"country":"Italian","name":"Italian","img":"public/img/italian.jpg"},
+    {"country":"Korean","name":"Korean","img":"pulic/img/korean.jpg"},
+    {"country":"Chinese","name":"Chinese","img":"public/img/chinese.jpg"},
+    {"country":"Thai","name":"Thai","img":"public/img/thai-country.jpg"},
+    {"country":"Mediterranean","name":"Mediterranean","img":"public/img/mediterranean.jpg"},
+    {"country":"Japanese","name":"Japanese","img":"public/img/japanese.jpg"},
+    {"country":"Filipino","name":"Filipino","img":"public/img/Filipino.jpg"},
+    {"country":"Vietnamese","name":"Vietnamese","img":"public/img/vietnamese.jpg"}
+  ]

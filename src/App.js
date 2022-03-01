@@ -1,7 +1,6 @@
 import React, { useState }from 'react';
 import FormCompontent from './form';
 import { AboutNav } from './NavBar';
-import { foodCard, foodCuisine, foodHeader } from './foodGenre';
 import { RestraurantList } from './RestrList';
 import { Route, Routes } from 'react-router-dom';
 import { propTypes } from 'react-bootstrap/esm/Image';

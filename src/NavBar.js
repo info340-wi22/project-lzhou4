@@ -14,8 +14,6 @@ export function AboutNav() {
                         <li><a className="nav-link" href="#">APP</a></li>
                         <li><a className="nav-link" href="#">SHARE</a></li>
                         <li><a className="nav-link" href="#">MY PAGE</a></li>
-                        <li><a className="nav-link" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true" 
-                        aria-controls="collapseForm" href="#collapseForm">SIGN IN</a></li>
                     </ul>
                 </div>
             </nav >

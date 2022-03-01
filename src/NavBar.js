@@ -11,6 +11,7 @@ export function AboutNav() {
                 </nav>
                 <Link className="navbar-brand" to="/">Moody Foodies</Link>
                 <div className="collapse navbar-collapse" id="navbarNav">
+                    <p className="navbar-center pt-4">What Food is your Mood?</p>
                     <ul className="navbar-nav" id="navigationLinks">
                         <li><Link className="nav-link" to="/app">APP</Link></li>
                         <li><Link className="nav-link" to="/share">SHARE</Link></li>

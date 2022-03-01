@@ -4,7 +4,7 @@ import FormCompontent from './form';
 // ----------
 import RestaurantRanks from "./RestaurantList";
 import { RestraurantList } from './RestrList';
-import RESTAURANT_LISTINGS from '..data/restaurant_listings.json';
+import RESTAURANT_LISTINGS from './src/data/RESTAURANT_LISTINGS.json';
 
 function App() {
 

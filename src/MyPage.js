@@ -16,7 +16,7 @@ function ListCard(props) {
 }
 
 // 
-export function MyPage() {
+export function MyPage(props) {
     let MyListArray = MyLists.map((elem) => {
         return <ListCard key={elem.country} origin={elem}/>
     })

@@ -27,16 +27,12 @@ function App(props) {
 
   return (
     <div className="App">
-
-
       <AboutNav />
-
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='Korean' element={
           <div>
-            <RestraurantList key={props.restraurant} />
-            
+            <RestraurantList key={props.restraurant} />    
           </div>} />
           <Route path='share' element={<FormCompontent addForm={addForm} />}/>
         <Route path='MyPage' element={<MyPage origin={props.restraurant} />} />

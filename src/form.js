@@ -1,62 +1,55 @@
 import React, { useState } from 'react';
-import { Button, Form } from "react-bootstrap";
-
+import { RestraurantList } from './RestrList';
+import { useParams } from 'react-router-dom';
+import RESTAURANT_LISTINGS from './data/restaurant_listings.json';
 
 
 // 1 prop: 
 // addForm: a rest object
+// RestArray: 
 export default function FormCompontent(props) {
+    const selectedRestGenre = useParams();
+    // const selectedRestGenre.restGenre;
+    const newRestArray = props.RestArray;
+    // console.log(newRestArray)
+    const [inputRestrauant, setInputRestrauant] = useState("");
+    const [inputDescript, setInputDescript] = useState("");
 
-    let [userInput, setUserInput] = useState({
-        inputRestrauant: "",
-        inputDescript: "",
-        inputDirection: ""
-    });
-    console.log(userInput);
-
-    const handleChange = (event) => {
+    const handleChange1 = (event) => {
         let newValue = event.target.value; // what the user has typed in to the form
-        setUserInput({
-            [event.target.name]: newValue
-        })
+        setInputRestrauant(newValue)
+    }
+    const handleChange2 = (event) => {
+        let newValue = event.target.value; // what the user has typed in to the form
+        setInputDescript(newValue)
     }
     const handleSubmit = (event) => {
+        console.log("here");
+        console.log(inputRestrauant);
+        console.log(inputDescript);
         event.preventDefault();
-        props.addForm(userInput); // change it to add list callback that render the input values into a list
-        setUserInput("")
+        props.addRest(selectedRestGenre.restGenre, inputRestrauant, inputDescript); // change it to add list callback that render the input values into a list
+        setInputRestrauant("");
+        setInputDescript("");
     }
+
 
     return (
         <div>
-            <h1>Add Restaurant</h1>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="foodGenre">
-                    <Form.Label>Food Genre</Form.Label>
-                    <Form.Check type="checkbox" label="Mexican" />
-                    <Form.Check type="checkbox" label="Italian" />
-                    <Form.Check type="checkbox" label="Korean" />
-                    <Form.Check type="checkbox" label="Chinese" />
-                </Form.Group>
+            {/* <h1>food genre name</h1>  */}
+            <RestraurantList restaurantArray={newRestArray}/>
+            <h2>Add Restaurant</h2>
+            <form onSubmit={handleSubmit} >
+                <label>Restraurant Name:
+                    <input className="form-control mb-3" type="text" name="name" value={inputRestrauant} onChange={handleChange1} />
+                </label>
+                <label>Restraurant Description:
+                    <input className="form-control mb-3" type="text" name="descript" value={inputDescript} onChange={handleChange2} />
+                </label>
+                {/* add image upload */}
+                <button className="btn btn-primary" type="submit">Submit</button> 
 
-                <Form.Group className="mb-3" controlId="restraurant">
-                    <Form.Label>Restraurant Name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter restraurant name" name="inputRestrauant" value={userInput.inputRestrauant} onChange={handleChange} />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="restraurantDescription">
-                    <Form.Label>Description</Form.Label>
-                    <Form.Control type="text" placeholder="Enter restraurant description" name="inputDescript" value={userInput.inputDescript} onChange={handleChange} />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="direction">
-                    <Form.Label>Restraurant Direction</Form.Label>
-                    <Form.Control type="text" placeholder="Enter restraurant direction" name="inputDirection" value={userInput.inputDirection} onChange={handleChange} />
-                </Form.Group>
-
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
-            </Form>
+            </form>
         </div>
     )
 }

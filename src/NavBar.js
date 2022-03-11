@@ -10,16 +10,6 @@ export function AboutNav() {
                         height="50" />
                 </nav>
                 <Link className="navbar-brand" to="/">Moody Foodies</Link>
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <p className="navbar-center pt-4">What Food is your Mood?</p>
-                    <ul className="navbar-nav" id="navigationLinks">
-                        <li><Link className="nav-link" to="/app">APP</Link></li>
-                        <li><Link className="nav-link" to="/share">SHARE</Link></li>
-                        <li><Link className="nav-link" to="/MyPage">MY PAGE</Link></li>
-                        <li><Link className="nav-link" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true" 
-                        aria-controls="collapseForm" to="#collapseForm">SIGN IN</Link></li>
-                    </ul>
-                </div>
             </nav >
         </div>
     )

@@ -35,32 +35,49 @@
 }
 
 /*Nav bar*/
+.navbar {
+    color: #ffa467;
+    background-color: blanchedalmond;
+}
+
 .navbar-nav {
     margin-left: auto;
 }
 
 .navbar-brand {
+    color: rgb(255, 181, 44);
+    font-family: 'Staatliches', cursive;
     padding-left: 1rem;
-    color: #a8a6a1;
-    font-size: 1.75rem;
+    font-size: 7rem;
     text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #EFBA97;
+}
+
+.navbar-center {
+    font-family: 'Staatliches', cursive;
+    color: #EFBA97;
 }
 
 .nav-item {
     padding: 1rem;
 }
- 
+
 .nav-link:hover {
-    color: grey;
+    color: #EFBA97;
 }
 
 .nav-link {
-    color: #a8a6a1;
+    font-family: 'Staatliches', cursive;
+    color: #ffa467;
 }
 
 .nav-icon {
     margin-left: 1rem;
 }
+
 .navbar-toggler {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -72,15 +89,27 @@ main {
     padding: 2.5rem;
 }
 
+.container-fluid {
+    background-color: #ffede1;
+}
+
+.about {
+    font-family: 'Staatliches', cursive;
+    color: blanchedalmond;
+    background-color: rgb(255, 181, 44);
+}
+
 .food-genre {
-    font-size: 2rem;
-    font-weight: 400;
-    color: black;
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-family: 'Staatliches', cursive;
+    color: #EFBA97;
 }
 
 .card-row {
     padding-top: .5rem;
 }
+
 
 .card {
     display: flex;
@@ -93,8 +122,8 @@ main {
     font-weight: 400;
     text-align: center;
     padding-bottom: 0%;
-    font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: black;
+    font-family: 'Staatliches', cursive;
+    color: #EFBA97;
 }
 
 .card-img {
@@ -122,7 +151,7 @@ main {
     font-weight: 400;
     text-align: center;
     padding-bottom: 0%;
-    font-family:"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Courier New', monospace;
     color: black;
 }
 
@@ -134,7 +163,7 @@ a {
 @media (min-width: 576px) {
     .navbar-brand {
         padding-left: 2rem;
-        color: gray;
+        color: rgb(255, 181, 44);
         font-size: 1.75rem;
     }
 

@@ -4,7 +4,7 @@
 
 /* Second HTML page */
 .restaurant-summary h1 {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Courier New', monospace;
     font-weight: 500;
     font-size: 1.25rem;
 }

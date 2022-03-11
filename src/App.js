@@ -27,6 +27,7 @@ function App(props) {
 
   return (
     <div className="App">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand:wght@500&family=Raleway:wght@300&family=Staatliches&display=swap" rel="stylesheet"></link>
       <AboutNav />
       <Routes>
         <Route path='/' element={<HomePage />} />

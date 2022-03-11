@@ -25,6 +25,10 @@ export function HomePage() {
             {/* <!-- Food Genre heading --> */}
             <div className="row">
                 <div className="col">
+                    <section className='about'> 
+                        <h1>What is Moody Foodies?</h1>
+                        <p>Moody Foodie is a platform to explore different Genre of Food all around the world and to make your own list for favorite cuisines</p>
+                    </section>
                     <span className="food-genre">Food Genre</span>
                 </div>
             </div>

@@ -17,7 +17,7 @@ function FoodCard(props) {
 }
 
 // 
-export function MyPage() {
+export function MyPage(props) {
     let MyListArray = MyLists.map((elem) => {
         return <FoodCard key={elem.country} origin={elem}/>
     })

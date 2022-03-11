@@ -46,9 +46,9 @@
     text-decoration: none;
 }
 
-.nav-item {
+/* .nav-item {
     padding: 1rem;
-}
+} */
  
 .nav-link:hover {
     color: grey;
@@ -129,6 +129,10 @@ main {
 a {
     text-decoration: none;
 }
+
+/* li.nav-item {
+    padding: 1;
+} */
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {

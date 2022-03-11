@@ -5,8 +5,9 @@ import { RestraurantList } from './RestrList';
 import { Route, Routes } from 'react-router-dom';
 import { MyPage } from './MyPage';
 import { propTypes } from 'react-bootstrap/esm/Image';
-import { Footer } from './Footer.js';
+import { Footer } from './Footer';
 import { HomePage } from './HomePage';
+import { AboutPage } from './AboutPage';
 function App(props) {
   // define function addForm pass as a prop to FormCompontent
 
@@ -30,6 +31,7 @@ function App(props) {
       <AboutNav />
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='AboutPage' element={<AboutPage />} /> 
         <Route path='Korean' element={
           <div>
             <RestraurantList key={props.restraurant} />    

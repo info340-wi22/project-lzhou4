@@ -14,6 +14,7 @@ export function AboutNav() {
                     <p className="navbar-center pt-4">What Food is your Mood?</p>
                     <ul className="navbar-nav" id="navigationLinks">
                         <li><Link className="nav-link" to="/app">APP</Link></li>
+                        <li><Link className="nav-link" to="/AboutPage">ABOUT</Link></li>
                         <li><Link className="nav-link" to="/share">SHARE</Link></li>
                         <li><Link className="nav-link" to="/MyPage">MY PAGE</Link></li>
                         <li><Link className="nav-link" data-toggle="collapse" data-target="#collapseForm" aria-expanded="true" 

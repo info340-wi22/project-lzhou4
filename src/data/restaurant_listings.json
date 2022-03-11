@@ -1,26 +1,86 @@
 [           
     {
-         "restaurantRank": "Top 1", 
+         "restaurantGenre": "Korean",
          "restaurantName": "Korean Tofu House", 
          "restaurantText": "Korean Tofu House has the best side dishes!!! And the dishes all taste so good! It's my go-to place when I feel like eating Korean food.", 
          "restaurantImg": "https://images.unsplash.com/photo-1580651315530-69c8e0026377?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
     },
     {
-         "restaurantRank": "Top 2", 
+         "restaurantGenre": "Korean",
          "restaurantName": "The BoB", 
          "restaurantText": "The BoB have very good side dishes as well, but the wait time there is a bit longer. I LOVE their spicy pork bone soup and bibimbap!", 
          "restaurantImg": "https://i0.wp.com/seonkyounglongest.com/wp-content/uploads/2019/02/korean-dumpling-hot-pot-2.jpg?fit=1300%2C732&ssl=1"
     },
     {
-         "restaurantRank": "Top 3", 
+         "restaurantGenre": "Korean",
          "restaurantName": "Chi Mac", 
          "restaurantText": "The fried chicken at Chi Mac is THE BEST!!! I absolutely love the snow flavor, other flavors are good too! Their fried rice and cheese corn are also very delicious. Also love their radish that goes with the chicken!", 
          "restaurantImg": "https://images.dailyhive.com/20200214121159/71598897_381612379458979_9001795591640206581_n-1.jpg"
    },
    {
-         "restaurantRank": "Top 4", 
+        "restaurantGenre": "Korean",
          "restaurantName": "Kong Tofu House", 
          "restaurantText": "Kong Tofu House is very affordable and tastes okay, I want to try all of their menu.", 
          "restaurantImg": "https://images.unsplash.com/photo-1558892349-f0812740196e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2342&q=80"
+   },
+   {
+        "restaurantGenre": "Vietnamese",
+        "restaurantName": "Pho Than Brothers",
+        "restaurantText": "Very tasty, quick, and affordable bowls of yummy broth and noodles!",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/dWVCzJBjxGslqWEv2wOPnw/o.jpg"
+   },
+   {
+        "restaurantGenre":"Vietnamese",
+        "restaurantName": "Sizzle&Crunch",
+        "restaurantText": "The rice bowls and sandwiches are so flavorful. A great quick and filling bite between classes",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/WNL-bTM-XZTT_pYBhBcg2Q/o.jpg"
+   },
+   {
+        "restaurantGenre": "Mediterranean",
+        "restaurantName": "Aladdin Falafel Corner",
+        "restaurantText": "This is a classic 2am eats! Greasy, meaty, yet filling; this place is a great way to satisfy the munchies on a night out",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/URfIUr3rx0um8DhN654emA/o.jpg"
+   },
+   {
+        "restaurantGenre": "Mediterranean",
+        "restaurantName": "Shawarma King",
+        "restaurantText": "This place does not beat Aladdin's but it is a close one! Definetly a great place with filling gyro plates",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/uDG1uQjgfxybgbP9jqkaxA/o.jpg"
+   },
+   {
+        "restaurantGenre": "Thai",
+        "restaurantName": "Little Thai Restaurant",
+        "restaurantText": "Their mango sticky rice is a perfect way to end a delicious meal of spices and flavors!",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/6Yv7ItmLA4AnCmmOsEHI5Q/o.jpg"
+   },
+   {
+        "restaurantGenre": "Thai",
+        "restaurantName": "Ate O'clock Thai",
+        "restaurantText": "A yummy, and recently new place that opened up the past year or so. Give it a try some time!",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/Kh1yWR2P0qFL0ZsRg0qW1w/o.jpg"
+   },
+      {
+        "restaurantGenre": "Chinese",
+        "restaurantName": "Xi'an Noodles",
+        "restaurantText": "Bouncy, chewy, fresh noodles covered with sauces and soups so tasty and so good!!",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/lO5KlpBpDXhohTLhfOfNtA/o.jpg"
+   },
+      {
+        "restaurantGenre": "Chinese",
+        "restaurantName": "A+ Hong Kong Kitchen",
+        "restaurantText": "A nice sit down place for a larger group to enjoy multitude of different dishes!",
+        "restaurantImg": "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_659,w_989,x_8,y_0/c_limit,dpr_2.0,f_auto,fl_lossy,q_80,w_500/a_hong_kong_ldzx72.jpg"
+   },
+      {
+        "restaurantGenre": "Japanese",
+        "restaurantName": "U:Don Fresh Japanese Noodle Station",
+        "restaurantText": "Convenient, customizable, and comforting food! Find a filling bowl of noodles and soup fitting to your taste and mood",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/4lZdLWpKgzkGMzZdQv9Tng/o.jpg"
+   },
+      {
+        "restaurantGenre": "Japanese",
+        "restaurantName": "Itadakimasu",
+        "restaurantText": "This place give full servings! It wont be sure to disapoint with all the yummy options",
+        "restaurantImg": "https://s3-media0.fl.yelpcdn.com/bphoto/AJfB1na3csHvdOy6yQ-VzA/o.jpg"
    }
  ]

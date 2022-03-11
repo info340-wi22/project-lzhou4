@@ -4,42 +4,44 @@ import { AboutNav } from './NavBar';
 import { RestraurantList } from './RestrList';
 import { Route, Routes } from 'react-router-dom';
 import { MyPage } from './MyPage';
-import { propTypes } from 'react-bootstrap/esm/Image';
-import { Footer } from './Footer.js';
+import { Footer } from './Footer';
 import { HomePage } from './HomePage';
+import RESTAURANT_LISTINGS from './data/restaurant_listings.json';
+import FOODS from './data/foods.json';
+
+
 function App(props) {
-  // define function addForm pass as a prop to FormCompontent
-
-
-
-
-
-  const addForm = (restraurantName, restraurantDescript, restraurantDirection) => {
+  // change to represent current rest
+  const [currentRest, setCurrentRest] = useState(RESTAURANT_LISTINGS);
+  console.log(currentRest);
+  const addRestaurant = (restaurantGenre, restraurantName, restraurantDescript) => {
+    console.log(restraurantName, restraurantDescript);
     const newRestr = {
-      inputRestrauant: restraurantName,
-      inputDescript: restraurantDescript,
-      inputDirection: restraurantDirection,
+      restaurantGenre: restaurantGenre,
+      restaurantName: restraurantName,
+      restaurantText: restraurantDescript,
+      restaurantImg: ""
     }
-    return newRestr;
-    // setInput(newRestr)
+    const newRestArray = [...currentRest, newRestr];
+    setCurrentRest(newRestArray);
   }
 
+  const [displayedData, setDisplayedData] = useState(FOODS.subregion);
+  console.log(FOODS.subregion);
+  function applyFilter(regionName) {
+    if (regionName==='') {
+      setDisplayedData(FOODS.subregion);
+    } else {
+      setDisplayedData(FOODS.subregion.filter(value => value == regionName));
+    }
+  }
 
   return (
     <div className="App">
-
-
       <AboutNav />
-
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='Korean' element={
-          <div>
-            <RestraurantList key={props.restraurant} />
-            
-          </div>} />
-          <Route path='share' element={<FormCompontent addForm={addForm} />}/>
-        <Route path='MyPage' element={<MyPage origin={props.restraurant} />} />
+        <Route path='/' element={<HomePage applyFilterCallback={applyFilter}/>} />
+        <Route path=':restGenre' element={<FormCompontent addRest={addRestaurant} RestArray={currentRest}/>}/>
       </Routes>
       <Footer />
     </div>

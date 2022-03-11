@@ -14,12 +14,12 @@ function App(props) {
   // change to represent current rest
   const [currentRest, setCurrentRest] = useState(RESTAURANT_LISTINGS);
   console.log(currentRest);
-  const addRestaurant = (restaurantGenre, restraurantName, restraurantDescript) => {
-    console.log(restraurantName, restraurantDescript);
+  const addRestaurant = (restaurantGenre, restaurantName, restaurantDescript) => {
+    console.log(restaurantName, restaurantDescript);
     const newRestr = {
       restaurantGenre: restaurantGenre,
-      restaurantName: restraurantName,
-      restaurantText: restraurantDescript,
+      restaurantName: restaurantName,
+      restaurantText: restaurantDescript,
       restaurantImg: ""
     }
     const newRestArray = [...currentRest, newRestr];
@@ -38,6 +38,7 @@ function App(props) {
 
   return (
     <div className="App">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand:wght@500&family=Raleway:wght@300&family=Sigmar+One&family=Staatliches&display=swap" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand:wght@500&family=Raleway:wght@300&family=Staatliches&display=swap" rel="stylesheet"></link>
       <AboutNav />
       <Routes>

@@ -4,25 +4,29 @@
 
 /* Second HTML page */
 .restaurant-summary h1 {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Staatliches', cursive;
+    color: rgb(255, 181, 44);
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .restaurant-summary h2 {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Staatliches', cursive;
+    color: rgb(255, 181, 44);
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .restaurant-summary p {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Staatliches', cursive;
+    color: #EFBA97;
     font-weight: 300;
     font-size: 1rem;
 }
 
 .restaurant-summary a {
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Staatliches', cursive;
+    color: #EFBA97;
     font-weight: 300;
     font-size: 1rem;
     color: #a8a6a1;
@@ -33,6 +37,23 @@
     width: 500px;
     height: auto;
 }
+
+/*form*/
+
+.form-function {
+    color: #ffa467;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+.nav-item {
+    padding: 8px;
+}
+
+.btn {
+    background-color: #ffa467;
+}
+
 
 /*Nav bar*/
 .navbar {
@@ -48,7 +69,7 @@
     color: rgb(255, 181, 44);
     font-family: 'Staatliches', cursive;
     padding-left: 1rem;
-    font-size: 7rem;
+    font-size: 3rem;
     text-decoration: none;
 }
 
@@ -87,6 +108,7 @@
 /*HTML Home Page*/
 main {
     padding: 2.5rem;
+    background-color: #ffede1;
 }
 
 .container-fluid {
@@ -94,27 +116,39 @@ main {
 }
 
 .about {
-    font-family: 'Staatliches', cursive;
-    color: blanchedalmond;
+    margin-top: 2rem;
+    text-align: center;
     background-color: rgb(255, 181, 44);
+}
+
+.about h1 {
+    font-size: 40px;
+    color: blanchedalmond;
+    font-family: 'Sigmar One', cursive;
+}
+
+.about p {
+    font-size: 22px;
+    font-family: 'Staatliches', cursive;
+    color: #fff5ef;
 }
 
 .food-genre {
     font-size: 1.75rem;
     font-weight: 300;
     font-family: 'Staatliches', cursive;
-    color: #EFBA97;
+    color: rgb(255, 181, 44);
 }
 
 .card-row {
     padding-top: .5rem;
 }
 
-
 .card {
     display: flex;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    background-color: blanchedalmond;
 }
 
 .card-title {
@@ -136,6 +170,17 @@ main {
     opacity: 50%;
 }
 
+/*form selector*/
+.form-select {
+    color: #EFBA97;
+    font-family: 'Staatliches', cursive;
+}
+
+.btn {
+    color: blanchedalmond;
+    font-family: 'Staatliches', cursive;
+}
+
 .py-3 {
     padding-top: 1rem!important;
     padding-bottom: 1rem!important;
@@ -150,21 +195,44 @@ main {
     font-size: 1.25rem;
     font-weight: 400;
     text-align: center;
+    margin-top: 1rem;
     padding-bottom: 0%;
-    font-family: 'Courier New', monospace;
-    color: black;
+    font-family: 'Staatliches', cursive;
+    color: #EFBA97;
 }
 
 a {
     text-decoration: none;
+    color: rgb(255, 181, 44);
 }
+
+a:hover {
+    color: #EFBA97;
+}
+
+/*footer*/
+.footer-page {
+    background-color: blanchedalmond;
+    color: #ffa467;
+    font-family: 'Staatliches', cursive;
+}
+
+.name {
+    margin-left: 2rem;
+}
+
+h4 {
+    margin-left: 1rem;
+    padding-top: 1rem;
+}
+
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {
     .navbar-brand {
         padding-left: 2rem;
         color: rgb(255, 181, 44);
-        font-size: 1.75rem;
+        font-size: 5 rem;
     }
 
     .nav-icon {

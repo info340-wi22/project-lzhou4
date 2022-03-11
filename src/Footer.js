@@ -2,16 +2,16 @@ import React from "react";
 
 export function Footer() {
     return (
-        <div>
+        <div className='footer-page'>
             <h4>Contact the Team</h4>
             <ul className="nav justify-content-left d-block">
-                <li className="nav-item ">
+                <li className="name ">
                     <a href="mailto:zhou4@uw.edu">Angel Zhou</a>
                 </li>
-                <li className="nav-item">
+                <li className="name">
                     <a href="mailto:alya2@uw.edu">Asigiah Aly</a>
                 </li>
-                <li className="nav-item">
+                <li className="name">
                     <a href="mailto:jennysun@uw.edu">Jenny Sun</a>
                 </li>
             </ul>

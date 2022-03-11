@@ -46,9 +46,9 @@
     text-decoration: none;
 }
 
-.nav-item {
+/* .nav-item {
     padding: 1rem;
-}
+} */
  
 .nav-link:hover {
     color: grey;
@@ -130,6 +130,11 @@ a {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
+/* li.nav-item {
+    padding: 1;
+} */
+=======
 /* form {
     background: white;
     border: 1px solid #dedede;
@@ -157,6 +162,7 @@ a {
     font-weight: 500;
     margin-bottom: 5px;
   } */
+>>>>>>> 20aa67de8b983862720d1812e799d43a324d5189
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {

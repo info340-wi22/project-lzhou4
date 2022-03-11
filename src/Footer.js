@@ -3,18 +3,19 @@ import React from "react";
 export function Footer() {
     return (
         <div>
-            <ul className="nav justify-content-center border-bottom pb-1.5 mb-3">
-                <li className="nav-item">
-                    <a className="nav-link" href="#">App</a>
+            <h4>Contact the Team</h4>
+            <ul className="nav justify-content-left d-block">
+                <li className="nav-item ">
+                    <a href="mailto:zhou4@uw.edu">Angel Zhou</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Share</a>
+                    <a href="mailto:alya2@uw.edu">Asigiah Aly</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">My Page</a>
+                    <a href="mailto:jennysun@uw.edu">Jenny Sun</a>
                 </li>
             </ul>
-            <p className="text-center">&copy; 2022 Moody Foodies</p>
+            <p className="text-center">&copy; Moody Foodies | INFO 340 - Group A2 | 2022 </p>
         </div>
     )
 }

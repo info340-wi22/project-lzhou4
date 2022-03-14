@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import _ from 'lodash';
+import { Link } from "react-router-dom";
 
 
 // 1 props 
@@ -37,8 +38,13 @@ export function RestraurantList(props) {
         return <Restr key={elem.restrName} restaurant={elem} />
     })
 
+    
+
     return (
         <div className="container-fluid">
+            <div>
+                <Link to="/"><button className="btn btn-primary mt-3" type="submit">Back</button></Link>
+            </div>
             {restrListArray}
             <div>
                     <section className='about'>

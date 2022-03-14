@@ -4,6 +4,7 @@ export function Footer() {
     return (
         <div className='footer-page'>
             <h4>Contact the Team</h4>
+            {/* <div class="material-icons" aria-label="email icon">email</div> */}
             <ul className="nav justify-content-left d-block">
                 <li className="name ">
                     <a href="mailto:zhou4@uw.edu">Angel Zhou</a>

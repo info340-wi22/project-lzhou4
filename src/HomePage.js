@@ -28,16 +28,22 @@ export function HomePage(props) {
         setregionSelected(event.target.value);
     }
 
-    function clickHandler(event) {
+    function clickHandler() {
         props.applyFilterCallback(regionSelected);
     }
 
+    let uniqueSubregion = new Set();
+    FOODS.forEach(elem => {
+        uniqueSubregion.add(elem.subregion);
+    });
+    // uniqueSubregion.add(FOODS);
+    console.log(uniqueSubregion);
     // foods array
     const optionElems = FOODS.map((regionName) => {
         return <option key={regionName.country} value={regionName.subregion}>{regionName.subregion}</option>
     })
 
-    let FoodArray = FOODS.map((elem) => {
+    let FoodArray = props.data.map((elem) => {
         return <FoodCard key={elem.country} origin={elem} />
     })
     return (

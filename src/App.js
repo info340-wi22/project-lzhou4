@@ -26,13 +26,16 @@ function App(props) {
     setCurrentRest(newRestArray);
   }
 
-  const [displayedData, setDisplayedData] = useState(FOODS.subregion);
-  console.log(FOODS.subregion);
+//   const subregions = FOODS.map((regionName) => {
+//     return <option key={regionName.country} value={regionName.subregion}>{regionName.subregion}</option>
+// })
+  const [displayedData, setDisplayedData] = useState(FOODS);
+  // console.log(FOODS.subregion);
   function applyFilter(regionName) {
     if (regionName==='') {
-      setDisplayedData(FOODS.subregion);
+      setDisplayedData(FOODS);
     } else {
-      setDisplayedData(FOODS.subregion.filter(value => value == regionName));
+      setDisplayedData(FOODS.filter(elem => elem.subregion == regionName));
     }
   }
 
@@ -40,7 +43,7 @@ function App(props) {
     <div className="App">
       <AboutNav />
       <Routes>
-        <Route path='/' element={<HomePage applyFilterCallback={applyFilter}/>} />
+        <Route path='/' element={<HomePage applyFilterCallback={applyFilter} data={displayedData}/>} />
         <Route path=':restGenre' element={<FormCompontent addRest={addRestaurant} RestArray={currentRest}/>}/>
       </Routes>
       <Footer />

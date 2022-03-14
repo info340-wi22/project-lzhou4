@@ -3,7 +3,6 @@ import FormCompontent from './form';
 import { AboutNav } from './NavBar';
 import { RestraurantList } from './RestrList';
 import { Route, Routes } from 'react-router-dom';
-import { MyPage } from './MyPage';
 import { Footer } from './Footer';
 import { HomePage } from './HomePage';
 import RESTAURANT_LISTINGS from './data/restaurant_listings.json';

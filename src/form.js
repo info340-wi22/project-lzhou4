@@ -38,12 +38,11 @@ export default function FormCompontent(props) {
         <div>
             {/* <h1>food genre name</h1>  */}
             <RestraurantList restaurantArray={newRestArray}/>
-            <h2>Add Restaurant</h2>
-            <form onSubmit={handleSubmit} >
-                <label>Restraurant Name:
+            <form className='form-function' onSubmit={handleSubmit} >
+                <label className='"nav-item'>Restraurant Name:
                     <input className="form-control mb-3" type="text" name="name" value={inputRestrauant} onChange={handleChange1} />
                 </label>
-                <label>Restraurant Description:
+                <label className='nav-item'>Restraurant Description:
                     <input className="form-control mb-3" type="text" name="descript" value={inputDescript} onChange={handleChange2} />
                 </label>
                 {/* add image upload */}

@@ -10,11 +10,11 @@ function FoodCard(props) {
             <div className="card mb-4">
                 <img src={props.origin.img} className="card-img" alt="{props.origin.country} Food" width="500px" height="300px" />
                 <div className="card-body mr-2">
-                    <h1 className="card-title">
+                    <p className="card-title">
                         <Link to={'/' + props.origin.country}>
                             {props.origin.country}
                         </Link>
-                    </h1>
+                    </p>
                 </div>
             </div>
         </div>
@@ -48,6 +48,30 @@ export function HomePage(props) {
     })
     return (
         <div className="container-fluid">
+            {/* <!-- Food Genre heading --> */}
+            <div className="row">
+                <div className="col">
+                    <section className='about'>
+                        <h1>What is Moody Foodies?</h1>
+                        <p>Moody Foodies is a platform to explore different Genre of Food all around the world and to make your own list for favorite cuisines</p>
+                        </section>
+                        <section className='about'>
+                        <h1>How to Navigate?</h1>
+                        <p>
+                            Click a country's cuisine to look at listings of the food and local restaraunts
+                        </p>
+                        </section>
+                        <section className='about'>
+                        <h1>
+                            Adding a Restaurant
+                        </h1>
+                        <p>
+                            Add a restaurant you discovered by filling out the form
+                        </p>
+                    </section>
+                    <span className="food-genre">Food Genre</span>
+                </div>
+            </div>
             {/* filter form */}
             <div className="row align-items-center mb-3">
                 <div className="col-auto">
@@ -58,12 +82,6 @@ export function HomePage(props) {
                 </div>
                 <div className="col-auto">
                     <button id="submitButton" type="submit" className="btn btn-warning" onClick={clickHandler}>Apply Filter</button>
-                </div>
-            </div>
-            {/* <!-- Food Genre heading --> */}
-            <div className="row">
-                <div className="col">
-                    <span className="food-genre">Food Genre</span>
                 </div>
             </div>
 

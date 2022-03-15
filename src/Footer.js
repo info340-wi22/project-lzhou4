@@ -3,7 +3,7 @@ import React from "react";
 export function Footer() {
     return (
         <div className='footer-page'>
-            <h4>Contact the Team</h4>
+            <h2>Contact the Team</h2>
             {/* <div class="material-icons" aria-label="email icon">email</div> */}
             <ul className="nav justify-content-left d-block">
                 <li className="name ">

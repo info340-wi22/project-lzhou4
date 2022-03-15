@@ -146,6 +146,14 @@ a {
     }
 }
 
+@media (min-width: 992x) {
+    .about {
+        font-size: 4rem;
+    }
+}
+
+
+
 
 
 

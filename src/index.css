@@ -122,13 +122,13 @@ main {
 }
 
 .about h1 {
-    font-size: 40px;
+    font-size: 2rem;
     color: blanchedalmond;
     font-family: 'Sigmar One', cursive;
 }
 
 .about p {
-    font-size: 22px;
+    font-size: 1.5rem;
     font-family: 'Staatliches', cursive;
     color: #fff5ef;
 }
@@ -219,9 +219,10 @@ a:hover {
 
 .name {
     margin-left: 2rem;
+    font-size: 1.5rem;
 }
 
-h4 {
+h2 {
     margin-left: 1rem;
     padding-top: 1rem;
 }
@@ -232,7 +233,7 @@ h4 {
     .navbar-brand {
         padding-left: 2rem;
         color: rgb(255, 181, 44);
-        font-size: 5 rem;
+        font-size: 5rem;
     }
 
     .nav-icon {
@@ -250,6 +251,34 @@ h4 {
     .card-img {
         width: 350px; 
         height: 250px; 
+    }
+}
+
+@media (min-width: 768px) {
+    /* .navbar-brand {
+        padding-left: 2rem;
+        color: rgba(255, 181, 44, 0.80);
+        font-size: 8rem;
+    } */
+    .about h1 {
+        font-size: 3rem;
+    }
+    
+    .about p {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    img.nav-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-page {
+        font-size: 2rem;
     }
 }
 

@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 export default function RestaurantListPage(props) {
     const newRestArray = props.RestArray;
     return (
-        <div>
+        <div className="subregpage">
             <div>
-                <Link to="/"><button className="btn btn-primary mt-3" type="submit">Back</button></Link>
+                <Link to="/"><button className="btn btn-primary m-3" type="submit">Back</button></Link>
                 <RestraurantList restaurantArray={newRestArray} />
             </div>
             <div>

@@ -1,38 +1,58 @@
-import React, { useState } from 'react';
-import FormCompontent from './form';
+import React, { useEffect, useState } from 'react';
 import { AboutNav } from './NavBar';
-import { RestraurantList } from './RestrList';
-import { Route, Routes } from 'react-router-dom';
-import { MyPage } from './MyPage';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { Footer } from './Footer';
 import { HomePage } from './HomePage';
 import RESTAURANT_LISTINGS from './data/restaurant_listings.json';
 import FOODS from './data/foods.json';
-
+import RestaurantListPage from './RestaurantListPage';
+import { getDatabase, ref, set as firebaseSet, onValue, push as firebasePush } from 'firebase/database';
 
 function App(props) {
   // change to represent current rest
   const [currentRest, setCurrentRest] = useState(RESTAURANT_LISTINGS);
-  console.log(currentRest);
-  const addRestaurant = (restaurantGenre, restaurantName, restaurantDescript) => {
-    console.log(restaurantName, restaurantDescript);
+  const db = getDatabase();
+  const dataRef = ref(db, 'restaurantArray');
+
+  useEffect(()=>{
+    onValue(dataRef, (snapshot) => {
+      const restaurantObject = snapshot.val();
+      const resetKeyArray = Object.keys(restaurantObject);
+      const restaurantArray = resetKeyArray.map((keyString)=>{
+        const whichObject = restaurantObject[keyString];
+        whichObject.firebaseKey = keyString;
+        return whichObject;
+      })
+      console.log(currentRest);
+      const newRestArray = [...currentRest, ...restaurantArray];
+      console.log(newRestArray);
+      // save it to state
+      setCurrentRest(newRestArray);
+    }) //like an event listener
+  },[]);
+
+  const AddRestaurant = (restaurantGenre, restaurantName, restaurantDescript) => {
+
+    // instead put new restaurant in the database
+
+
     const newRestr = {
       restaurantGenre: restaurantGenre,
       restaurantName: restaurantName,
       restaurantText: restaurantDescript,
       restaurantImg: ""
     }
+
+    firebasePush(dataRef, newRestr)
+      .catch((err) => console.log(err))
+
     const newRestArray = [...currentRest, newRestr];
     setCurrentRest(newRestArray);
   }
 
-//   const subregions = FOODS.map((regionName) => {
-//     return <option key={regionName.country} value={regionName.subregion}>{regionName.subregion}</option>
-// })
   const [displayedData, setDisplayedData] = useState(FOODS);
-  // console.log(FOODS.subregion);
   function applyFilter(regionName) {
-    if (regionName==='') {
+    if (regionName === '') {
       setDisplayedData(FOODS);
     } else {
       setDisplayedData(FOODS.filter(elem => elem.subregion == regionName));
@@ -41,12 +61,11 @@ function App(props) {
 
   return (
     <div className="App">
-      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand:wght@500&family=Raleway:wght@300&family=Sigmar+One&family=Staatliches&display=swap" rel="stylesheet"></link>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Quicksand:wght@500&family=Raleway:wght@300&family=Staatliches&display=swap" rel="stylesheet"></link>
       <AboutNav />
       <Routes>
-        <Route path='/' element={<HomePage applyFilterCallback={applyFilter} data={displayedData}/>} />
-        <Route path=':restGenre' element={<FormCompontent addRest={addRestaurant} RestArray={currentRest}/>}/>
+        <Route path='/' element={<HomePage applyFilterCallback={applyFilter} data={displayedData} />} />
+        <Route path='/restaurants/:restGenre' element={<RestaurantListPage RestArray={currentRest} addRest={AddRestaurant} />} />
+        <Route path='*' element={<Navigate to='/' />} />
       </Routes>
       <Footer />
     </div>

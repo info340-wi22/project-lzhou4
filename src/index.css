@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 /* Second HTML page */
 .restaurant-summary h1 {
     font-family: 'Staatliches', cursive;
@@ -210,6 +214,15 @@ a:hover {
     color: #EFBA97;
 }
 
+.container-fluid > h1 {
+    color: #ffa467;
+    font-family: 'Staatliches', cursive;
+}
+
+div.subregpage {
+    background-color: #ffede1;
+}
+
 /*footer*/
 .footer-page {
     background-color: blanchedalmond;
@@ -226,7 +239,6 @@ h2 {
     margin-left: 1rem;
     padding-top: 1rem;
 }
-
 
 /*media query for main page and javascrpt/link to the next page*/
 @media (min-width: 576px) {

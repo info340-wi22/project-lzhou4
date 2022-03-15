@@ -21,7 +21,9 @@ function FoodCard(props) {
     )
 }
 
-
+// 2 props
+// applyFilterCallback: callback function that apply the filter
+// data: data that get displayed
 export function HomePage(props) {
     const [regionSelected, setregionSelected] = useState('');
     function regionSelectChangeCallBack(event) {
@@ -35,7 +37,6 @@ export function HomePage(props) {
     const key = 'subregion';
     const uniqueSubregion = [...new Map(FOODS.map(item =>
         [item[key], item])).values()];
-    // foods array
     const optionElems = uniqueSubregion.map((regionName) => {
         return <option key={regionName.country} value={regionName.subregion}>{regionName.subregion}</option>
     })
@@ -58,14 +59,6 @@ export function HomePage(props) {
                             Click a country's cuisine to look at listings of the food and local restaraunts
                         </p>
                     </section>
-                    {/* <section className='about'>
-                        <h1>
-                            Adding a Restaurant
-                        </h1>
-                        <p>
-                            Add a restaurant you discovered by filling out the form
-                        </p>
-                    </section> */}
                     <span className="food-genre">Food Genre</span>
                 </div>
             </div>

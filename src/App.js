@@ -6,10 +6,9 @@ import { HomePage } from './HomePage';
 import RESTAURANT_LISTINGS from './data/restaurant_listings.json';
 import FOODS from './data/foods.json';
 import RestaurantListPage from './RestaurantListPage';
-import { getDatabase, ref, set as firebaseSet, onValue, push as firebasePush } from 'firebase/database';
+import { getDatabase, ref, onValue, push as firebasePush } from 'firebase/database';
 
-function App(props) {
-  // change to represent current rest
+function App() {
   const [currentRest, setCurrentRest] = useState(RESTAURANT_LISTINGS);
   const db = getDatabase();
   const dataRef = ref(db, 'restaurantArray');
@@ -23,26 +22,21 @@ function App(props) {
         whichObject.firebaseKey = keyString;
         return whichObject;
       })
-      console.log(currentRest);
       const newRestArray = [...currentRest, ...restaurantArray];
-      console.log(newRestArray);
       // save it to state
       setCurrentRest(newRestArray);
     }) //like an event listener
   },[]);
 
-  const AddRestaurant = (restaurantGenre, restaurantName, restaurantDescript) => {
-
-    // instead put new restaurant in the database
-
-
+  const AddRestaurant = (restaurantGenre, restaurantName, restaurantDescript, restaurantImg) => {
     const newRestr = {
       restaurantGenre: restaurantGenre,
       restaurantName: restaurantName,
       restaurantText: restaurantDescript,
-      restaurantImg: ""
+      restaurantImg: restaurantImg
     }
 
+    // instead put new restaurant in the database
     firebasePush(dataRef, newRestr)
       .catch((err) => console.log(err))
 

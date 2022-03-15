@@ -2,7 +2,9 @@ import FormCompontent from "./form";
 import { RestraurantList } from "./RestrList";
 import { Link } from "react-router-dom";
 
-
+// 2 props:
+// RestArray: array of restaurants
+// addRest: callback function that add restaurants
 export default function RestaurantListPage(props) {
     const newRestArray = props.RestArray;
     return (

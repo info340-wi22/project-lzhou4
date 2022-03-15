@@ -23,7 +23,7 @@ function Restr(props) {
 }
 
 // 1 props 
-// restaurant: array of restaurant objects
+// restaurantArray: array of restaurant objects
 export function RestraurantList(props) {
     const selectedRestGenre = useParams();
     let restaurants = props.restaurantArray.filter((elem) => {
